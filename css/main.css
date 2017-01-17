@@ -51,11 +51,48 @@ a:visited {
 /*********** Layout Styles *******
 *******************************/
 
-#wrapper {
-  background-image: url("http://openwork.agency/wp-content/uploads/2016/11/gaussian-blur_00303411.jpg");
+.wrapper {
+  /*background-image: url("http://openwork.agency/wp-content/uploads/2016/11/gaussian-blur_00303411.jpg");*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+}
+
+.main-content {
+  padding: 0 20px;
+  color: #333;
+}
+
+.wedding-info {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  border-bottom: 2px solid #333;
+}
+
+.events {
+  display: flex;
+  margin: 10px 0;
+}
+
+.events h4 {
+  margin: 0px;
+}
+
+.icon {
+  margin: 0px 15px 0 0;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.venue {
+  text-align: center;
+}
+
+.map {
+  background-color: #fff;
+  padding: 5px;
 }
 
 
