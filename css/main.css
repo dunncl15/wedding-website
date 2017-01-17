@@ -12,11 +12,12 @@ body {
 }
 
 header {
+  position: relative;
   background-image: url("../images/boyden_farm.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  height: 100vh;
+  height: 720px;
 }
 
 h2 {
@@ -24,12 +25,30 @@ h2 {
   color: #444;
   font-size: 300%;
   text-align: center;
-  margin-top: 0;
+  margin: 5px 0;
 }
 
 nav {
   padding-top: 1em;
   text-align: center;
+}
+
+section {
+  width: 95%;
+  margin: 0 auto;
+  padding: 25px 0;
+  background-color: #fafafa;
+  border-bottom: 1px solid lightgrey;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+h4,
+h5,
+p {
+  margin: 0;
 }
 
 a {
@@ -48,7 +67,7 @@ a:visited {
 }
 
 
-/*********** Layout Styles *******
+/******** Layout Styles ********
 *******************************/
 
 .wrapper {
@@ -59,40 +78,77 @@ a:visited {
 }
 
 .main-content {
-  padding: 0 20px;
   color: #333;
+  padding: 0;
 }
+
+/*** About Section ***/
+
+.about {
+  text-align: center;
+}
+
+/*** Wedding Info Section ***/
 
 .wedding-info {
   display: flex;
   flex-direction: column;
-  background-color: #fafafa;
-  border-bottom: 2px solid #333;
+}
+
+.venue {
+  margin: 0 auto 15px auto;
+  text-align: center;
+}
+
+.venue p {
+  font-size: .85em;
+}
+
+.location {
+  font-size: 1.5em;
+  padding: 5px;
 }
 
 .events {
   display: flex;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .events h4 {
-  margin: 0px;
+  margin: 0 0 8px 0;
 }
 
 .icon {
-  margin: 0px 15px 0 0;
+  margin: 0 15px 0 0;
   padding: 5px;
   width: 50px;
   height: 50px;
 }
 
-.venue {
-  text-align: center;
+/*** Travel Section ***/
+
+.travel p {
+  margin: 10px 0;
+  line-height: 20px;
 }
 
-.map {
-  background-color: #fff;
-  padding: 5px;
+.lodging-option {
+  margin: 20px 0;
+}
+
+.lodging-option img {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  height: 80%;
+}
+
+.condo-rates {
+  list-style: disc;
+}
+
+.condo-rates li {
+  margin: 0 0 0 20px;
 }
 
 
@@ -165,8 +221,11 @@ a:visited {
 
 .button {
   text-align: center;
-  position: relative;
-  bottom: -20px;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 
 .rsvp {
@@ -194,38 +253,6 @@ a:visited {
   text-decoration: none;
 }
 
-/******** Wedding Info **********
-*******************************/
-
-#info {
-  text-align: center;
-}
-
-#info span {
-  font-weight: bold;
-}
-
-#info a {
-  color: #960002;
-}
-
-/******** Location **********
-*******************************/
-
-#location,
-.map {
-  text-align: center;
-}
-
-.directions {
-  text-align: left;
-}
-
-.map {
-  margin: 1.5em 0 0 0;
-}
-
-
 /******** Media Queries ********
 *******************************/
 
@@ -248,8 +275,4 @@ a:visited {
   .menu {
     display: inline;
     font-size: 110%;
-  }
-
-  .button {
-    bottom: -130px;
   }
