@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta title="McLane-Dunn Wedding | 09/09/17" />
+    <title>McLane-Dunn Wedding | 09.09.17</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/form.css" type="text/css"  />
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Great+Vibes|Merriweather|Montserrat|Satisfy|Tangerine|Sail" rel="stylesheet">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div class="form_header">
+          <h1>The McLane-Dunn Wedding</h1>
+          <h2>RSVP</h2>
+          <p class="sub_title">Please fill out the following form for each person that received an invitation.</p>
+        </div>
+      </header>
+
+      <form action="/webformmailer.php" method="post">
+        <div class="form_wrap">
+          <label for="name">Full Name:</label><br />
+          <input type="text" id="name" name="user_name" placeholder="Required" /><br />
+          <label for="attending">Will you be attending?</label></br>
+          <select id="attending" name="user_status" required="required">
+           <option value="Choose option">Choose option</option>
+           <option value="yes">Yes, I will be attending</option>
+           <option value="no">I regretfully decline</option>
+         </select><br />
+         <label for="meal">Meal choice:</label><br />
+         <select id="meal" "user_meal" required="required">
+           <option value="Choose options">Choose option</option>
+           <option value="chicken">Chicken</option>
+           <option value="steak">Steak</option>
+           <option value="salmon">Salmon</option>
+         </select></br>
+         <label>Song requests:</label><br />
+         <textarea></textarea><br />
+         <button type="submit">Submit</button><br />
+       </div>
+      </form>
+      <a href="index.html">Back --></a>
+    </div>
+  </body>
+</html>

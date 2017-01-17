@@ -1,0 +1,244 @@
+*  {
+  box-sizing: border-box;
+}
+
+/***** Base Styles ***********
+******************************/
+
+body {
+  margin: 0 auto;
+  max-width: 425px;
+  font-family: 'Merriweather', cabin, serif;
+  background-color: #E8E7E7;
+  color: #262630;
+}
+
+h1 {
+  font-family: 'Great Vibes', Merriweather, serif;
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #960002;
+  margin-top: 0;
+}
+
+form {
+  margin: 3px auto;
+  padding: 0 5%;
+  border-top: 2px solid #262630;
+  color:
+}
+
+
+/***** Layout Structure ******
+******************************/
+
+#wrapper {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.form_header {
+  text-align: center;
+  border-bottom: 5px solid #262630;
+
+}
+
+
+
+/*.form_header,
+.form_title,
+.footer {
+  text-align: center;
+}
+
+.form_title {
+  margin: 0 5%;
+  border-bottom: 5px solid #262630;
+}
+
+.contact_section,
+.newsletter_section {
+  margin-top: 3px;
+  border-top: 2px solid #262630;
+  padding: 3% 0 0 0;
+}*/
+
+/***** Form Styles ***********
+******************************/
+
+/*label {
+  color: #44444A;
+}
+
+.contact_section fieldset {
+  padding: 0;
+}
+
+.input_container {
+  margin-bottom: 15px;
+}
+
+#name,
+#email,
+#phone,
+#address,
+#city,
+#state,
+#zip_code {
+  margin-top: 5px;
+  padding: 15px 5px;
+  border-radius: 3px;
+  border: 1px solid #E8E7E7;
+  background-color: #E8E7E7;
+  width: 100%;
+}
+
+#zip_code {
+  width: 40%;
+}
+
+#state {
+  height: 3.25em;
+}
+
+select {
+  color: #A4A4A6;
+  padding: 0;
+  margin: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+  color: #44444A;
+}
+
+input[type="email"]#email::-webkit-input-placeholder,
+input[type="text"]#name::-webkit-input-placeholder {
+  font-style: italic;
+  font-size: .75em;
+  text-align: right;
+  padding-right: 10px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  margin-bottom: 12px;
+  margin-left: -8px;
+}
+
+textarea {
+  width: 100%;
+  height: 7em;
+  background-color: #E8E7E7;
+  border-style: none;
+  border-radius: 3px;
+  margin: 10px 0;
+  color: #44444A;
+}
+
+button {
+  width: 100%;
+  height: 3.5em;
+  margin: 35px 0 20px 0;
+  border-radius: 3px;
+  background-color: #017E69;
+  color: #fff;
+  border-style: none;
+  padding: 3% 5%;
+}
+
+.copyright {
+  font-style: italic;
+  margin-top: 20px;
+  text-align: center;
+  color: #A4A4A6;
+}
+
+#html_news,
+#html {
+  margin-top: 10px;
+}
+
+#plain_text {
+  margin-bottom: 20px;
+}*/
+
+
+/***** Media Queries *********
+******************************/
+
+
+/*@media (min-width: 768px) {
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 900px;
+  font-family: 'Merriweather', serif;
+  background-color: #E8E7E7;
+}
+
+h3 {
+  margin-top: 5px;
+}
+
+#wrapper {
+  background-color: #fff;
+  padding-bottom: 8em;
+  margin: 0 auto;
+  max-width: 85%;
+}
+
+.newsletter_section fieldset {
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.newsletter_section label {
+  margin-top: 15px;
+}
+*/
+
+/*************************************
+Contact Info Section - 2 Column Layout
+**************************************/
+
+/*.title {
+  float: left;
+  width: 33%;
+  margin-top: 15px;
+}
+
+#name,
+#email,
+#phone,
+#address,
+#city,
+#state {
+  width: 66%;
+  float: left;
+}
+
+#zip_code {
+  width: 25%;
+  margin-bottom: 30px;
+  float: left;
+}*/
+
+
+/***** Clearfix ***********
+******************************/
+
+  /*.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}*/
