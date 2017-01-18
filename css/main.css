@@ -21,15 +21,16 @@ header {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
 }
 
 h2 {
-  font-family: 'Tangerine', georgia, serif;
-  color: #444;
-  font-size: 300%;
-  text-align: center;
   margin: 5px 0;
+  color: #444;
+  /*font-family: 'cabin', georgia, serif;*/
+  font-size: 220%;
+  font-style: italic;
+  text-align: center;
 }
 
 section {
@@ -96,22 +97,28 @@ nav {
   height: 20px;
 }
 
+.menu-btn:hover {
+  visibility: hidden;
+}
+
 .menu-btn:hover .main-nav {
   visibility: visible;
-  height: 400px;
+  height: 300px;
 }
 
 .main-nav {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;  position: absolute;
-  top: -2px;
-  left: -2px;
+  justify-content: space-around;
+  position: absolute;
+  top: -11px;
+  left: -11px;
   width: 150px;
   height: 0px;
-  background-color: #287751;
+  background-color: #6a1719;
   border-radius: 2px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  opacity: .9;
   transition: height .35s linear;
   visibility: hidden;
 }
@@ -121,7 +128,7 @@ nav {
   align-items: center;
   justify-content: flex-start;
   width: 95%;
-  margin: 15px auto;
+  margin: 10px auto;
   padding: 0 10px;
   color: #fff;
 }
@@ -142,32 +149,36 @@ nav {
 .primary_title,
 .date {
   color: #fff;
-  font-family: 'Tangerine', Satisfy, serif;
+  font-family: 'Playfair Display', cabin, serif;
+  font-style: italic;
+  font-weight: 700;
   text-shadow: -1px -1px 2px #666;
   text-align: center;
 }
 
 .primary_title {
-  font-size: 350%;
+  font-size: 280%;
   margin: 0 0 10px 0;
 }
 
 .date {
-  font-size: 270%;
+  font-size: 215%;
 }
 
 .banner {
-  background-color: #287751;
-  height: 4.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5em 0;
+  background-color: #7a1c1f;
   color: #fff;
 }
 
 .banner > p {
-  margin-top: 0;
-  padding-top: .25em;
-  text-align: center;
-  font-family: 'Tangerine', georgia, serif;
-  font-size: 300%;
+  font-family: 'cabin', georgia, serif;
+  font-size: 150%;
+  font-style: italic;
+  font-weight: 400;
 }
 
 
@@ -194,7 +205,7 @@ nav {
 
 /*** Wedding Info Section ***/
 
-.wedding-info {
+#wedding-info {
   display: flex;
   flex-direction: column;
 }
@@ -322,20 +333,11 @@ nav {
 @media (min-width: 760px) {
 
   .primary_title {
-    font-size: 450%;
+    font-size: 300%;
     top: 200px;
   }
 
   .date {
-    font-size: 350%;
+    font-size: 250%;
     top: 160px;
-  }
-
-  nav {
-    padding-top: 2em;
-  }
-
-  .menu {
-    display: inline;
-    font-size: 110%;
   }
