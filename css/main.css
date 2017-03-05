@@ -8,7 +8,7 @@
 body {
  font-family: 'cabin', Merriweather, serif;
  max-width: 1800px;
- background-color: #f9f9f9;
+ background-color: #e2e2e2;
 }
 
 header {
@@ -36,7 +36,7 @@ section {
   width: 95%;
   margin: 0 auto;
   padding: 25px 0;
-  background-color: #fafafa;
+  background-color: #f9f9f9;
   border-bottom: 1px solid lightgrey;
 }
 
@@ -69,6 +69,8 @@ a:visited {
 *******************************/
 
 #wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -98,15 +100,6 @@ header {
   width: 20px;
   height: 20px;
 }
-
-/*.menu-btn:hover {
-  visibility: hidden;
-}
-
-.menu-btn:hover .main-nav {
-  visibility: visible;
-  height: 300px;
-}*/
 
 .main-nav {
   display: none;
@@ -194,6 +187,7 @@ header {
   color: #333;
   padding: 0;
   border-bottom: none;
+  width: 100%;
 }
 
 /*** About Section ***/
@@ -239,9 +233,10 @@ header {
   height: 50px;
 }
 
-/*** Travel Section ***/
+/********* Lodging *********
+****************************/
 
-#travel p {
+#accommodations p {
   margin: 10px 0;
   line-height: 20px;
   text-align: justify;
@@ -254,7 +249,6 @@ header {
 .lodging-option {
   margin: 20px 0;
   padding: 0 0 20px 0;
-  border-bottom: 1px solid lightgrey;
 }
 
 .lodging-primary-img,
@@ -311,6 +305,32 @@ header {
   margin: 15px;
 }
 
+/******** Getting Here ********
+*******************************/
+
+.travel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.map-wrap {
+  margin: 20px 0 0 0;
+}
+
+.map {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #6a1719;
+  color: #fff;
+  font-size: .8em;
+  text-align: right;
+  padding: 15px 10px 15px 0;
+}
 
 /******** Media Queries ********
 *******************************/
@@ -382,15 +402,39 @@ header {
 
   .lodging-option {
     border-bottom: none;
+    padding: 0;
   }
 
   .lodging-img {
     height: 40%;
   }
 
+  .attractions {
+    margin: -100px 0 0 0;
+  }
+
+  .travel-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px 0 0 0;
+  }
+
   @media screen and (min-width: 769px) {
 
     header {
-      height: 70vh;
+      height: 80vh;
+    }
+
+    .map {
+      width: 400px;
+      height: 300px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    #wrapper {
+      border: 1px solid #bdbdbd;
     }
   }
