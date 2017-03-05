@@ -6,7 +6,7 @@
 *******************************/
 
 body {
- font-family: 'cabin', Merriweather, Montserrat, serif;
+ font-family: 'cabin', Merriweather, serif;
  max-width: 1800px;
  background-color: #f9f9f9;
 }
@@ -27,7 +27,6 @@ header {
 h2 {
   margin: 5px 0;
   color: #444;
-  /*font-family: 'cabin', georgia, serif;*/
   font-size: 220%;
   font-style: italic;
   text-align: center;
@@ -69,15 +68,18 @@ a:visited {
 /*********** Header ***********
 *******************************/
 
-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+#wrapper {
+  overflow: hidden;
+}
+
+header {
+  position: relative;
 }
 
 .menu-btn {
-  position: relative;
+  position: absolute;
+  top: 5px;
+  left: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,47 +99,55 @@ nav {
   height: 20px;
 }
 
-.menu-btn:hover {
+/*.menu-btn:hover {
   visibility: hidden;
 }
 
 .menu-btn:hover .main-nav {
   visibility: visible;
   height: 300px;
-}
+}*/
 
 .main-nav {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   position: absolute;
-  top: -11px;
-  left: -11px;
-  width: 150px;
-  height: 0px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
   background-color: #6a1719;
-  border-radius: 2px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   opacity: .9;
-  transition: height .35s linear;
-  visibility: hidden;
+}
+
+.fixed {
+
+}
+
+.close-menu-btn {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .menu {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 95%;
-  margin: 10px auto;
-  padding: 0 10px;
+  padding: 10px 25px;
   color: #fff;
 }
 
 .menu a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 10px 0;
+  width: 100%;
   color: #fff;
   font-size: .85em;
+  text-transform: uppercase;
 }
 
 .nav-icon {
@@ -149,57 +159,46 @@ nav {
 .primary_title,
 .date {
   color: #fff;
-  font-family: 'Playfair Display', cabin, serif;
-  font-style: italic;
-  font-weight: 700;
+  font-family: 'Allura', cabin, serif;
   text-shadow: -1px -1px 2px #666;
   text-align: center;
 }
 
 .primary_title {
-  font-size: 280%;
+  font-size: 300%;
   margin: 0 0 10px 0;
 }
 
 .date {
-  font-size: 215%;
+  font-size: 220%;
 }
 
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .5em 0;
+  padding: 10px 0;
   background-color: #7a1c1f;
-  color: #fff;
+  color: #e5dada;
 }
 
 .banner > p {
-  font-family: 'cabin', georgia, serif;
-  font-size: 150%;
-  font-style: italic;
-  font-weight: 400;
+  font-family: 'Allura', georgia, serif;
+  font-size: 175%;
 }
-
 
 /******** Layout Styles ********
 *******************************/
 
-.wrapper {
-  /*background-image: url("http://openwork.agency/wp-content/uploads/2016/11/gaussian-blur_00303411.jpg");*/
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-}
-
 .main-content {
   color: #333;
   padding: 0;
+  border-bottom: none;
 }
 
 /*** About Section ***/
 
-.about {
+#about {
   text-align: center;
 }
 
@@ -242,16 +241,24 @@ nav {
 
 /*** Travel Section ***/
 
-.travel p {
+#travel p {
   margin: 10px 0;
   line-height: 20px;
+  text-align: justify;
+}
+
+.lodging-primary {
+  margin: 35px 0 20px 0;
 }
 
 .lodging-option {
   margin: 20px 0;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid lightgrey;
 }
 
-.lodging-option img {
+.lodging-primary-img,
+.lodging-img {
   display: block;
   margin: 10px 0;
   width: 100%;
@@ -266,78 +273,124 @@ nav {
   margin: 0 0 0 20px;
 }
 
-
-
-
-/***** Mobile Navigation *******
-*******************************/
-/*
-.menu {
-  text-decoration: none;
-  margin-bottom: 20px;
-  text-shadow: -1px -1px .5 #666;
-  font-weight: bolder;
-  list-style: none;
-}
-
-.menu > a {
-  padding: 10px 20px;
-  color: #888;
-  font-size: 105%;
-}
-
-.menu > a:hover {
-  color: #999;
-}*/
-
-/******** RSVP Button **********
+/********* Attractions *********
 *******************************/
 
-.button {
-  text-align: center;
-  position: absolute;
-  bottom: 100px;
-  left: 0;
-  right: 0;
+.attractions {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: none;
+}
+
+.attractions h2 {
+  margin: 0 10px 20px 10px;
+}
+
+.attractions-wrap {
+  display: flex;
+  align-items: center;
+  overflow: auto;
+  width: 95%;
   margin: 0 auto;
 }
 
-.rsvp {
-  padding: 10px 40px;
-  border-radius: 3px;
-  letter-spacing: .1em;
-  background-color: #960002;
-  position: relative;
-  border-style: none;
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1),
-  0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: .3s;
+.logo-square {
+  display: block;
+  height: 150px;
+  width: 150px;
+  margin: 15px;
 }
 
-.rsvp:hover {
-  color: #eee;
-  transform: scale(1.1);
+.logo-long {
+  display: block;
+  height: 125px;
+  width: 300px;
+  margin: 15px;
 }
 
-.rsvp a {
-  color: #fff;
-}
-
-.rsvp a:hover {
-  text-decoration: none;
-}
 
 /******** Media Queries ********
 *******************************/
 
-@media (min-width: 760px) {
+@media (min-width: 668px) {
+
+  header {
+    height: 60vh;
+  }
+
+  .menu-btn,
+  .close-menu-btn {
+    display: none;
+  }
+
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .menu a {
+    color: #e5dada;
+    font-size: .8em;
+  }
 
   .primary_title {
     font-size: 300%;
-    top: 200px;
   }
 
   .date {
     font-size: 250%;
-    top: 160px;
+  }
+
+  .lodging-primary h4 {
+    margin: 0 0 10px 0;
+  }
+
+  .lodging-primary-img {
+    float: right;
+    margin: 0 0 0 20px;
+    height: 50%;
+    width: 50%;
+  }
+
+  .event-grid,
+  .lodging-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .events,
+  .lodging-option {
+    width: 48%;
+  }
+
+  .lodging-option {
+    border-bottom: none;
+  }
+
+  .lodging-img {
+    height: 40%;
+  }
+
+  @media screen and (min-width: 769px) {
+
+    header {
+      height: 70vh;
+    }
   }

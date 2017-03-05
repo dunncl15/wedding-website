@@ -7,33 +7,31 @@
     <title>McLane-Dunn Wedding | 09.09.17</title>
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/main.css" type="text/css"  />
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Playfair+Display:400,700i|Merriweather|Tangerine" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Merriweather|Allura" rel="stylesheet">
   </head>
   <body>
-    <div class="wrapper">
+    <div id="wrapper">
       <header>
-        <nav>
-          <div class="menu-btn">
-            <img class="ham-menu" src="images/ham-menu-white.png" alt="menu icon">
-            <span>Menu</span>
-            <ul class="main-nav">
-              <li class="menu"><img class="nav-icon" src="images/info.png" alt="info icon"><a href="#wedding-info">Wedding Information</a></li>
-              <li class="menu"><img class="nav-icon" src="images/person.png" alt="person icon"><a href="#about">Our Story</a></li>
-              <li class="menu"><img class="nav-icon" src="images/nav-white.png" alt="navigation icon"><a href="#travel">Getting Here</a></li>
-              <li class="menu"><img class="nav-icon" src="images/attractions.png" alt="binoculors icon"><a href="#attractions">Area Attractions</a></li>
-              <li class="menu"><img class="nav-icon" src="images/email.png" alt="email icon"><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
+        <div class="menu-btn" data-role="collapsible">
+          <img class="ham-menu" src="images/ham-menu-white.png" alt="menu icon">
+          <span>Menu</span>
+        </div>
+        <nav class="main-nav">
+          <img class="close-menu-btn" src="images/close.png" alt="close menu icon">
+          <ul>
+            <li class="menu"><a href="#wedding-info"><img class="nav-icon" src="images/info.png" alt="info icon">Wedding Information</a></li>
+            <li class="menu"><a href="#about"><img class="nav-icon" src="images/person.png" alt="person icon">Our Story</a></li>
+            <li class="menu"><a href="#travel"><img class="nav-icon" src="images/nav-white.png" alt="navigation icon">Getting Here</a></li>
+            <li class="menu"><a href="#attractions"><img class="nav-icon" src="images/attractions.png" alt="binoculors icon">Area Attractions</a></li>
+            <li class="menu"><a href="#contact"><img class="nav-icon" src="images/email.png" alt="email icon">Contact</a></li>
+          </ul>
         </nav>
         <h1 class="primary_title">The McLane-Dunn Wedding</h1>
-        <h2 class="date">September 9th, 2017</h2>
-        <!-- <div class="button">
-        <button type="submit" class="rsvp"><a href="#form">RSVP</a></button>
-        </div> -->
+        <h2 class="date">09-09-17</h2>
       </header>
-      <!-- <div class="banner">
+      <div class="banner">
         <p>Join us to celebrate!</p>
-      </div> -->
+      </div>
       <section class="main-content">
         <section id="about">
           <h2>Our Story</h2>
@@ -45,68 +43,161 @@
             <h5 class="location"><a href="http://www.boydenfarm.com/" target="_blank">The Barn at Boyden Farm</a></h5>
             <p>44 VT-104, Cambridge, VT 05444 - <span><a href="https://goo.gl/maps/4TBpqwrgiZT2" target="_blank">View Map</a></span></p>
           </div>
-          <div class="events">
-            <div class="icon-wrap">
-              <img class="icon" src="images/rings.png" alt="rings icon">
+          <div class="event-grid">
+            <div class="events">
+              <div class="icon-wrap">
+                <img class="icon" src="images/rings.png" alt="rings icon">
+              </div>
+              <div class="details">
+                <h4>4:00 PM - Ceremony</h4>
+                <p>The ceremony will be held outside at Boyden Farm promptly at 4:00 PM. Overnight parking is available onsite. Please arrive 15 minutes early.</p>
+              </div>
             </div>
-            <div class="details">
-              <h4>4:00 PM - Ceremony</h4>
-              <p>The ceremony will be held outside at Boyden Farm promptly at 4:00 PM. Overnight parking is available onsite. Please arrive 15 minutes early.</p>
+            <div class="events">
+              <div class="icon-wrap">
+                <img class="icon" src="images/champagne.png" alt="champagne glass icon">
+              </div>
+              <div class="details">
+                <h4>5:00 PM - Cocktail Hour</h4>
+                <p>The cocktail hour will immediately follow the ceremony and will be held outside on the barn patio. Please enjoy a few cocktails and hor d'oeurves before dinner.</p>
+              </div>
             </div>
-          </div>
-          <div class="events">
-            <div class="icon-wrap">
-              <img class="icon" src="images/champagne.png" alt="champagne glass icon">
+            <div class="events">
+              <div class="icon-wrap">
+                <img class="icon" src="images/dinner.png" alt="rings icon">
+              </div>
+              <div class="details">
+                <h4>6:00 PM - Dinner and Dancing</h4>
+                <p>Please join us for a three course dinner prepared by the local restaurant 158 Main inside the beautiful Boyden Farm Barn.</p>
+              </div>
             </div>
-            <div class="details">
-              <h4>5:00 PM - Cocktail Hour</h4>
-              <p>The cocktail hour will immediately follow the ceremony and will be held outside on the barn patio. Please enjoy a few cocktails and hor d'oeurves before dinner.</p>
-            </div>
-          </div>
-          <div class="events">
-            <div class="icon-wrap">
-              <img class="icon" src="images/dinner.png" alt="rings icon">
-            </div>
-            <div class="details">
-              <h4>6:00 PM - Dinner and Dancing</h4>
-              <p>Please join us for a three course dinner prepared by the local restaurant 158 Main inside the beautiful Boyden Farm Barn.</p>
-            </div>
-          </div>
-          <div class="events">
-            <div class="icon-wrap">
-              <img class="icon" src="images/party.png" alt="rings icon">
-            </div>
-            <div class="details">
-              <h4>11:00 PM - After Party</h4>
-              <p>The party at Boyden Farm will conclude by 11pm. We'll be heading up the road to the Brewster River Pub to continue the celebration. There will be a shuttle provided from the venue to the bar.</p>
+            <div class="events">
+              <div class="icon-wrap">
+                <img class="icon" src="images/party.png" alt="rings icon">
+              </div>
+              <div class="details">
+                <h4>11:00 PM - After Party</h4>
+                <p>The party at Boyden Farm will conclude by 11pm. We'll be heading up the road to the Brewster River Pub to continue the celebration. There will be a shuttle provided from the venue to the bar.</p>
+              </div>
             </div>
           </div>
         </section>
-        <section id="travel">
-          <h2>Travel & Accommodations</h2>
-          <div class="lodging-option">
-            <h4>Smuggler's Notch Resort</h4>
-            <img class="smuggs-img" src="images/smuggs.jpg" alt="aerial view of smugglers notch">
+        <section id="accommodations">
+          <h2>Accommodations</h2>
+          <div class="lodging-primary">
+            <h3>Smuggler's Notch Resort</h3>
+            <img class="lodging-primary-img" src="images/smuggs.jpg" alt="aerial view of smugglers notch">
             <address>4323 Vermont 108 S, Jeffersonsville, VT 05464</address>
             <a href="tel:800521-0536">(800) 521-0536</a>
             <p>This location is 15 minutes away from the Barn at Boyden Farm.
-            At this location attendee's will have the opportunity to share multi-bedroom condos. The condos will be placed all in one communal location. Smugglers Notch booking includes unlimited use of pools, basketball, shuffleboard and resort activities. There are also hiking and fitness programs, zip lining, and other programs.</p>
+            At this location attendee's will have the opportunity to share multi-bedroom condos. The condos will be placed all in one communal location. Smugglers' Notch booking includes unlimited use of pools, basketball, shuffleboard and resort activities. There are also hiking and fitness programs, zip lining, and other programs.</p>
             <p>There are many options for all groupings. Choose to stay on your own in a studio or one-bedroom or bunk in a 3 or 4 bedroom condo with other friends and family.
             To book, please call or email Ben Childs at the number and email listed, be sure to mention that you are part of the McLane/Dunn Wedding.</p>
             <p>Contact:<a href="tel:8005210536"> (800) 521-0536</a> or <a href="mailto:benchilds@smuggs.com">benchilds@smuggs.com</a>.</p>
-            <p>* Note there is a two-night minimum at this location. And 15% Vermont tax and resort service charge is included in the rate.</p>
+            <p>The bride and groom will be providing complimentary shuttles from Smugglers' Notch to and from the reception.</p>
             <h4>Condo Sizes & Rates</h4>
             <ul class="condo-rates">
-              <li>Studio Up to 4: $247</li>
-              <li>One-Bedroom Up to 6: $319</li>
-              <li>Two-Bedroom Up to 8 $419</li>
-              <li>Three-Bedroom Up to 10 $519</li>
-              <li>Four/Five - Bedrooms Up to 12 $599</li>
+              <li>Studio Up to 4: $158</li>
+              <li>One-Bedroom Up to 6: $198</li>
+              <li>Two-Bedroom Up to 8: $228</li>
+              <li>Three-Bedroom Up to 10: $318</li>
+              <li>Four/Five - Bedrooms Up to 12: $318</li>
             </ul>
             <p>* Five bedrooms only have two bathrooms. All other condo's come with one bathroom per room.</p>
+            <p>* Note there is a two-night minimum at this location. 15% Vermont tax and resort service charge is included in the rate.</p>
+          </div>
+          <div class="lodging-grid">
+            <div class="lodging-option">
+              <h3>Hotel Vermont</h3>
+              <img class="lodging-img" src="images/hotel-vt.jpg" alt="hotel vermont">
+              <address>41 Cherry St, Burlington, VT 05401</address>
+              <a href="tel:8026510080">(802) 651-0080</a>
+              <p>Hotel Vermont is located in downtown Burlington about 45 minutes from Boyden Farm. This is a great option for those wishing to return to Burlington after the wedding reception.</p>
+              <p>Room rates vary, but typically pricing ranges from $250 - $350 per night.</p>
+            </div>
+            <div class="lodging-option">
+              <h3>Smugglers' Notch Inn</h3>
+              <img class="lodging-img" src="images/smuggsinn.jpg" alt="hotel vermont">
+              <address>55 Church Street, Jeffersonville, VT 05464</address>
+              <a href="tel:8026446607">(802) 644-6607</a>
+              <p>The Smuggler's Notch Inn is located nearby the wedding venue in Jeffersonville, VT. </p>
+              <p>Room rates vary, but typically pricing ranges from $150 - $200 per night.</p>
+            </div>
           </div>
         </section>
       </section>
+      <section class="attractions">
+        <h2>A Few of Our Favorite Things</h2>
+        <div class="attractions-wrap">
+          <article class="activity">
+            <a href="http://www.churchstmarketplace.com/"><img class="logo-long" src="images/churchst.png" alt="church street marketplace logo"></a>
+          </article>
+          <article class="activity">
+            <a href="https://enjoyburlington.com/venue/waterfront-park/"><img class="logo-long" src="images/burlington.png" alt="burlington, vt logo"></a>
+          </article>
+          <article class="activity">
+            <a href="http://www.burlingtonbaycafe.com/"><img class="logo-long" src="images/burlingtonbay.png" alt="burlington bay cafe logo"></a>
+          </article>
+          <article class="activity">
+            <a href="http://switchbackvt.com/"><img class="logo-square" src="images/switchback.png" alt="switchback brewery logo"></a>
+          </article>
+          <article class="activity">
+            <a href="http://www.zerogravitybeer.com/"><img class="logo-square" src="images/zerogravity.png" alt="zero gravity brewery logo"></a>
+          </article>
+          <article class="activity">
+            <a href="http://www.citizencider.com/"><img class="logo-square" src="images/citizencider.jpg" alt="citizen cider logo"></a>
+          </article>
+          <article class="activity">
+            <a href="http://www.gostowe.com/"><img class="logo-long" src="images/stowe.jpg" alt="stowe, vt logo"></a>
+          </article>
+          <article class="activity">
+            <a href="http://www.coldhollow.com/"><img class="logo-square" src="images/coldhollow.png" alt="cold holllow cidery logo"></a>
+          </article>
+          <article class="activity">
+            <a href="https://alchemistbeer.com/"><img class="logo-square" src="images/alchemist.jpg" alt="alchemist brewery logo"></a>
+          </article>
+          <article class="activity">
+            <a href="http://www.vontrappbrewing.com/"><img class="logo-long" src="images/vontrapp.png" alt="von trapp brewing company logo"></a>
+          </article>
+          <article class="activity">
+            <a href="http://www.benjerry.com/about-us/factory-tours"><img class="logo-long" src="images/ben-jerry.jpg" alt="ben and jerrys logo"></a>
+          </article>
+          <article class="activity">
+            <a href="http://vtstateparks.com/htm/underhill.htm"><img class="logo-square" src="images/hike.jpg" alt="vermont state parks logo"></a>
+          </article>
+        </div>
+      </section>
+      <section class="travel">
+        <h2>Getting Here</h2>
+        <div class="airport-option">
+          <h3>Burlington Int'l Airport</h3>
+          <p>
+            <address>
+            1200 Airport Drive, South Burlington, VT 05403
+            </address>
+          Closest Airport - approximately 1 hour from Smugglers Notch Resort</p>
+        </div>
+        <div class="airport-option">
+          <h3>Boston Logan Int'l Airport</h3>
+          <p>
+            <address>
+            1 Harborside, Boston, MA 02128
+          </address>
+          Approximately 3 1/2 hours from Smugglers Notch Resort</p>
+        </div>
+        <div class="airport-option">
+          <h3>Montreal-Pierre Elliot Trudeau Int'l Airport</h3>
+          <p>
+            <address>
+            Montreal, QC H4A, Canada
+            </address>
+          Approximately 2 hours from Smugglers Notch Resort</p>
+        </div>
+      </section>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js">
+
+    </script>
   </body>
 </html>
