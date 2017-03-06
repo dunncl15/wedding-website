@@ -330,11 +330,62 @@ footer {
 /******** Media Queries ********
 *******************************/
 
-@media (min-width: 821px) {
+@media screen and (min-width: 768px) {
 
   header {
     height: 70vh;
   }
+
+  .lodging-primary h4 {
+    margin: 0 0 10px 0;
+  }
+
+  .lodging-primary-img {
+    float: right;
+    margin: 0 0 0 20px;
+    height: 50%;
+    width: 50%;
+  }
+
+  .event-grid,
+  .lodging-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .events,
+  .lodging-option {
+    width: 48%;
+  }
+
+  .lodging-option {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .lodging-img {
+    height: 40%;
+  }
+
+  #attractions {
+    margin: -40px 0 0 0;
+  }
+
+  .travel-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 25px 0 0 0;
+  }
+
+  .map {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 821px) {
 
   .menu a {
     font-size: .9em;
@@ -372,54 +423,6 @@ footer {
 
   .date {
     font-size: 250%;
-  }
-
-  .lodging-primary h4 {
-    margin: 0 0 10px 0;
-  }
-
-  .lodging-primary-img {
-    float: right;
-    margin: 0 0 0 20px;
-    height: 50%;
-    width: 50%;
-  }
-
-  .event-grid,
-  .lodging-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .events,
-  .lodging-option {
-    width: 48%;
-  }
-
-  .lodging-option {
-    border-bottom: none;
-    padding: 0;
-  }
-
-  .lodging-img {
-    height: 40%;
-  }
-
-  #attractions {
-    margin: -100px 0 0 0;
-  }
-
-  .travel-wrap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 25px 0 0 0;
-  }
-
-  .map {
-    width: 400px;
-    height: 300px;
   }
 
 
