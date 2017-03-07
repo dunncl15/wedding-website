@@ -16,4 +16,20 @@ $( window ).on('scroll', function(e) {
     $('.menu a').css("color", "#838383");
     $('.home-icon').css("display", "flex");
   }
+
+  if ($(this).width() < 821 && $(this).scrollTop() > 500) {
+    $('.back-to-top').removeClass('hide');
+  }
+
+  if ($(this).width() < 821 && $(this).scrollTop() < 500) {
+    $('.back-to-top').addClass('hide');
+  }
+
+  if ($(this).width() > 821) {
+    $('.back-to-top').addClass('hide');
+  }
 });
+
+// $( window ).on('scroll', function(e) {
+//
+// });
