@@ -69,6 +69,7 @@ a:visited {
 
 #wrapper {
   overflow: hidden;
+  background-color: #f9f9f9;
 }
 
 header {
@@ -165,14 +166,16 @@ header {
   display: block;
   margin: 10px 0;
   padding: 8px 25px;
-  background-color: #7a1c1f;
+  background-color: #922226;
   border-radius: 3px;
-  border: 1px solid #8d5656;
+  border: 1px solid #7a1c1f;
   box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2);
+  transition-duration: .25s;
 }
 
 .rsvp:hover {
   transform: scale(1.1);
+  transition-duration: .25s;
 }
 
 .rsvp a {
@@ -501,6 +504,7 @@ footer {
     background: linear-gradient(to top, #6a1719 0%, #922226 100%);
     opacity: 1;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition-delay: 2s;
   }
 
   .main-nav ul {
@@ -527,5 +531,42 @@ footer {
 
     header {
       height: 80vh;
+    }
+
+    .lodging-img {
+      max-width: 440px;
+      max-height: 275px;
+    }
+
+  }
+
+  @media screen and (min-width: 1400px) {
+
+    header {
+      height: 70vh;
+    }
+
+    section,
+    #travel,
+    #registry {
+      width: 70%;
+    }
+
+    .travel-wrap {
+      justify-content: space-between;
+    }
+
+    .lodging-primary-img {
+      max-height: 40%;
+      width: 40%;
+    }
+
+    .map {
+      width: 600px;
+    }
+
+    #registry h2 {
+      width: 100%;
+      margin: 0;
     }
   }
