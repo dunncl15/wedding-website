@@ -378,6 +378,7 @@ header {
 
 #registry {
   width: 100%;
+  border-bottom: none;
 }
 
 #registry h2 {
@@ -406,6 +407,44 @@ header {
   margin: 15px auto;
 }
 
+/*** Image Gallery ***/
+
+#gallery {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#gallery h2 {
+  margin: 0 auto;
+  padding: 35px 0 15px 0;
+  width: 95%;
+  border-top: 1px solid lightgrey;
+}
+
+.panels {
+  width: 95%;
+  margin: 30px auto 0 auto;
+  display: flex;
+  overflow: scroll;
+}
+
+.panel {
+  margin: 5px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 1px 5px 1px #dbdbdb;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.panel img {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
 footer {
   background-color: #6a1719;
   color: #fff;
@@ -422,6 +461,10 @@ footer {
 
   header {
     height: 70vh;
+  }
+
+  .main-nav {
+    z-index: 5;
   }
 
   .lodging-primary h4 {
@@ -483,6 +526,26 @@ footer {
     justify-content: space-around;
   }
 
+  #registry {
+    border-bottom: none;
+  }
+
+  /*** Image Gallery ***/
+
+  .panels {
+    margin: 30px auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: visible;
+  }
+
+  .panel:hover {
+    transform: scale(1.4);
+    transition: .25s;
+    transition-timing-function: ease;
+    box-shadow: none;
+  }
+
 }
 
 @media screen and (min-width: 821px) {
@@ -539,6 +602,10 @@ footer {
       max-height: 275px;
     }
 
+    .panels {
+      justify-content: space-around;
+    }
+
   }
 
   @media screen and (min-width: 1400px) {
@@ -549,7 +616,8 @@ footer {
 
     section,
     #travel,
-    #registry {
+    #registry,
+    #gallery {
       width: 70%;
     }
 
@@ -566,8 +634,14 @@ footer {
       width: 600px;
     }
 
-    #registry h2 {
+    #registry h2,
+    #gallery h2 {
       width: 100%;
       margin: 0;
     }
+
+    .panel {
+      justify-content: space-between;
+    }
+
   }
