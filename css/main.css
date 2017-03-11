@@ -539,6 +539,10 @@ footer {
     overflow: visible;
   }
 
+  .panel {
+    flex: 0 1 25%;
+  }
+
   .panel:hover {
     transform: scale(1.4);
     transition: .25s;
@@ -603,12 +607,13 @@ footer {
     }
 
     .panels {
-      justify-content: space-around;
+      justify-content: flex-start;
     }
 
   }
 
-  @media screen and (min-width: 1400px) {
+
+  @media screen and (min-width: 1350px) {
 
     header {
       height: 70vh;
@@ -641,7 +646,7 @@ footer {
     }
 
     .panel {
-      justify-content: space-between;
+      justify-content: center;
     }
 
   }
