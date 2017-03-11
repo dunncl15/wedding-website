@@ -430,20 +430,55 @@ header {
 }
 
 .panel {
-  margin: 5px;
-  padding: 10px;
-  background-color: #fff;
-  box-shadow: 0 1px 5px 1px #dbdbdb;
-  cursor: pointer;
-  transition: .25s;
-}
-
-.panel img {
-  display: flex;
+  margin: 0 10px;
+  padding: 125px;
   background-size: cover;
   background-position: center;
-  height: 40vh;
 }
+
+.panel1 {
+  background-image: url('../images/house.jpg')
+}
+.panel2 {
+  background-image: url('../images/jackson-lake.jpg')
+}
+.panel3 {
+  background-image: url('../images/mthuron.jpg')
+}
+.panel4 {
+  background-image: url('../images/lighthouse.jpg')
+}
+.panel5 {
+  background-image: url('../images/jackson.jpg')
+}
+.panel6 {
+  background-image: url('../images/sf.jpg')
+}
+.panel7 {
+  background-image: url('../images/redrocks.jpg')
+}
+.panel8 {
+  background-image: url('../images/ring.jpg')
+}
+.panel9 {
+  background-image: url('../images/sf-beach.jpg')
+}
+.panel10 {
+  background-image: url('../images/winter-park.jpg')
+}
+.panel11 {
+  background-image: url('../images/farmhouse.jpg')
+}
+.panel12 {
+  background-image: url('../images/wine-tasting.jpg')
+}
+
+.hint {
+  display: none;
+  text-align: center;
+  color: #a2a2a2;
+}
+
 
 footer {
   background-color: #6a1719;
@@ -533,21 +568,36 @@ footer {
   /*** Image Gallery ***/
 
   .panels {
-    margin: 30px auto;
+    width: 95%;
+    margin: 30px auto 0 auto;
+    display: flex;
+    height: 60vh;
+    background-color: #fff;
+    box-shadow: 0 1px 10px 2px #e9e9e9;
     flex-wrap: wrap;
-    justify-content: space-around;
-    overflow: visible;
   }
 
   .panel {
-    flex: 0 1 25%;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    box-shadow:inset 0 0 0 2px rgba(255,255,255,0.1);
+    cursor: pointer;
+    transition:
+          flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+          background 0.2s;
   }
 
-  .panel:hover {
-    transform: scale(1.4);
-    transition: .25s;
-    transition-timing-function: ease;
-    box-shadow: none;
+  .panel.open {
+    flex: 16;
+    box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+  }
+
+  .hint {
+    display: block;
+    font-style: italic;
   }
 
 }
@@ -593,6 +643,10 @@ footer {
     font-size: 290%;
   }
 
+  .panel.open {
+    flex: 7;
+  }
+
 }
 
   @media screen and (min-width: 1024px) {
@@ -604,10 +658,6 @@ footer {
     .lodging-img {
       max-width: 440px;
       max-height: 275px;
-    }
-
-    .panels {
-      justify-content: flex-start;
     }
 
   }
@@ -645,8 +695,8 @@ footer {
       margin: 0;
     }
 
-    .panel {
-      justify-content: center;
+    .panels {
+      width: 100%;
     }
 
   }
