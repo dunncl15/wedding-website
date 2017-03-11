@@ -30,6 +30,11 @@ $( window ).on('scroll', function(e) {
   }
 });
 
-// $( window ).on('scroll', function(e) {
-//
-// });
+
+const panels = document.querySelectorAll('.panel');
+
+function toggleOpen() {
+  $(this).toggleClass('open');
+}
+
+panels.forEach(panel => panel.addEventListener('click', toggleOpen));
